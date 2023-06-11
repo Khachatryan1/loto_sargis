@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    font-family: Courier New, Courier, monospace;
+    background-image: url('https://i.pinimg.com/736x/6a/1d/44/6a1d446eeaea938d41d481e6d70694b9.jpg');
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+#ticket {
+    margin-top: 50px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loto-ticket {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: olivedrab;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.fields {
+    border: 1px transparent;
+    background-color: #b7dee0;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    border-radius: 15%;
+}
+
+.field-with-number {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.empty-field {
+    background-color: #333333;
+}
+
+#right-side {
+    margin-right: 25px;
+    position: relative;
+}
+
+#used-numbers-container {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.used-numbers {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #d1c9c9;
+}
+
+.used-numbers:nth-child(1) {
+    position: fixed;
+    top: 40px;
+    right: 520px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 130px;
+    background-color: #987f7f;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 5px;
+    background-color: olivedrab;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(48, 69, 7);
+}
+
+#reset, #stop {
+    display: none;
+}
+
+.you-won {
+    font-size: 75px;
+    font-weight: bold;
+    background-color: #d1c9c9;
+    letter-spacing: 4px;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
